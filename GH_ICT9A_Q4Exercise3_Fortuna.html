@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title> Converter</title>
+</head>
+<body>
+<center><h3> Centimeter to Feet converter </h3> 
+<h4> Please input only the value to be computed </center>
+<input type="text" id="id1" placeholder="Enter Value (CM)"> <br>
+<input type="submit" value="Compute" onclick="myFunction()"> <br>
+<p id="answer"></p>
+<script>
+	function myFunction( ) {
+		var num1 = document.getElementById('id1').value;
+		var num2 = 30.48
+		var answer = Number(num1) / Number(num2);
+		document.getElementById('answer').innerHTML = "The answer is " + answer + " feet";
+	}
+</script>
+</body>
+</html>
